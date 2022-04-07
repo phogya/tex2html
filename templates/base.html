@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Latex to HTML</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a target="__blank" href="https://openr.it"><img class="header-logo" src="{{ url_for('static',filename='logo.jpg') }}"></img></a>
+            <a href="/"><span class="tex2html"> tex2html </span></a>
+        </header>
+        <div class="body">
+        {% block content %}
+        {% endblock%}
+        </div>
+        <footer>
+            <a href="https://rit.edu" target="__blank"><img style="width:100%;" src="{{ url_for('static',filename='logoRIT.svg')}}"></img></a>
+            <span>One Lomb Memorial Drive,<br/>
+                Rochester, NY 14623</span>
+            <div class="social">
+                <a  target="__blank" href="https://twitter.com/openatrit"><i data-feather="twitter"></i></a>
+                <a  target="__blank" href="https://instagram.com/openatrit"><i data-feather="instagram"></i></a>
+                <a  target="__blank" href="https://gitlab.com/open-rit"><i data-feather="gitlab"></i></a>
+            </div>
+            <a targte="__blank" href="mailto:openatrit@gmail.com">
+                <div class="contact">
+                    Contact
+                </div>
+            </a>
+        </footer>
+        <script>
+            feather.replace()
+          </script>
+    </body>
+</html>

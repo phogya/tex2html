@@ -1,0 +1,35 @@
+body {
+  padding: 10px 20%;
+  font-family: sans-serif;
+}
+
+br {
+  margin-bottom: 15px;
+}
+
+.ltx_page_logo {
+  display: none;
+}
+
+.ltx_ERROR,
+.undefined {
+  display: none;
+}
+.ltx_title_document {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#p1 {
+  display: none;
+}
+
+/* Footnote code used for cleaner script */
+.footnote-ref {
+	color: blue;
+	vertical-align: super;
+	font-size: 0.6rem;
+	text-decoration: none;
+}
+.footnote {
+	font-size: 0.7em;
+}

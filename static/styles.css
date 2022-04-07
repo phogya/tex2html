@@ -1,0 +1,166 @@
+.body {
+  padding: 0 20%;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 80vh;
+}
+
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+p,
+li {
+  font-size: 18px;
+  line-height: 1.55;
+}
+.a-bold {
+  color: #f76902;
+  font-weight: 700;
+  text-decoration: none;
+}
+.a-bold:hover {
+  color: black;
+}
+.c-orange {
+  color: #f76902;
+}
+header {
+  overflow-x: hidden;
+  max-height: 70px;
+  width: 100vw;
+  padding: 0 20%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tex2html {
+  font-size: 2rem;
+  margin-left: 100px;
+  padding: 0 10px;
+  font-weight: 700;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.upload {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.upload > h2 {
+  width: 100%;
+}
+.upload > form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+h2 {
+  font-weight: normal;
+}
+input {
+  margin-bottom: 20px;
+}
+input:hover {
+  cursor: pointer;
+}
+
+input[type="file"] {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  width: auto;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 700;
+  border-style: none;
+  padding: 20px 5px;
+}
+
+input[type="submit"] {
+  padding: 4px;
+  font-size: 2rem;
+  background-color: #f76902;
+  color: white;
+  width: 40%;
+  height: 150px;
+  border-style: none;
+}
+input[type="submit"]:hover {
+  background-color: black;
+}
+.header-logo {
+  max-height: 70px;
+}
+
+footer {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  min-height: 200px;
+  padding: 20px 20%;
+}
+footer > span,
+footer > a {
+  width: 22%;
+}
+footer > .social {
+  display: inline-flex;
+  max-width: 300px;
+}
+
+.social a {
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 6px;
+}
+.social a svg {
+  fill: black;
+  stroke: white;
+}
+
+.social a:hover {
+  background-color: #f76902;
+  color: white;
+}
+
+.social a:hover svg {
+  fill: white;
+  stroke: #f76902;
+}
+
+.contact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  background-color: white;
+  font-weight: 700;
+  color: black;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .body {
+    padding: 0 20px;
+  }
+}

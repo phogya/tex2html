@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div >
+    <h1>Convert Latex to Accessible HTML</h1>
+    <div>
+        <h2>Instructions</h2>
+        <p>Make sure you follow the below instructions before uploading</p>
+            <ol> 
+                <li>1. The name of your primary tex file in the project should be <span class="c-orange">main.tex</span></li>
+                <li>2. If you would like to add banner to your project(optional step), include the banner image in your project and name it as <span class="c-orange">headerImage.png</span></li>
+                <li>3. Compress your project into a zip file</li>
+            </ol>
+    </div>
+    
+    <div class="upload">
+        <h2>Upload and Convert</h2>
+        <form action="{{ url_for('convert') }}" method="post" enctype="multipart/form-data">
+            <input id="upload-latex" name="latexFile" type="file" accept=".zip,.rar,.7zip"/>
+            </br>
+            <input  type="submit" value="Convert"></input>
+        </form>
+        <h2>{{ message }}</h2>
+        
+    </div>
+    <div>
+        <h2>Download and Open</h2>
+        <p>Download the the zip file. Extract the downloaded zip file. The extracted folder will have all necessary HTML,CSS and JavaScript files. Open 
+            <span class="c-orange">index.html</span> in your browser. <br/>
+            <a href="/sample" target="__blank" class="a-bold">A sample HTML file converted from latex</a> 
+        </p>
+        
+    </div>
+    {% if file %}
+    <a target="__blank" href="{{ file }}">download</a>
+    {% endif %}
+
+</div>
+{% endblock %}
+        
+ 
